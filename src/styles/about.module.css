@@ -1,0 +1,75 @@
+.topContainer{
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.header{
+    font-size: 80px;
+}
+.subHeader{
+    font-size: 56px;
+    text-align:center;
+}
+.content{
+    font-size: 36px;
+    padding-top: 3%;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 300;
+}
+.resumeLink{
+    display: flex;
+    padding-top: 5%;
+    font-size: 36px;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+}
+.resumeLink:visited{
+    color: black;
+}
+.workLink{
+    display: flex;
+    padding-top: 35%;
+    font-size: 36px;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+}
+.workLink:visited{
+    color: black;
+}
+.been{
+    font-size: 64px;
+    margin-left: 2%;
+}
+.heading{
+    font-size: 64px;
+    float: right;
+    margin-right: 2%;
+}
+.imageContainer{
+    margin-left: 2%;
+    margin-right: 2%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.art{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.bottom{
+    clear: both;
+    padding-top: 8%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.bottomRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -8%;
+}

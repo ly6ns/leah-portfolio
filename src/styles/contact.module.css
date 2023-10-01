@@ -1,0 +1,21 @@
+.container{
+    height: -moz-calc(100vh - 400px);
+    height: -webkit-calc(100vh - 400px);
+    height: calc(100vh - (400px));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.innerContainer{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+}
+.linkedin{
+    margin-top: 10%;
+    
+}
+.email{
+    font-family: 'Comfortaa', cursive;
+    font-weight: 400;
+}

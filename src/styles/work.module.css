@@ -1,0 +1,51 @@
+.container{
+    margin: 5% 15%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.workContainer{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 4% 0;
+    width: 100%;
+    max-width: 1000px;
+}
+.workLeftContainer{
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+.workRightContainer{
+    margin-left: 50px;
+    flex: 1;
+    text-align: center;
+}
+.workButton{
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    padding: 5px 18px;
+    border-color: transparent;
+    float: right;
+}
+
+.name{
+    font-size: 40;
+}
+.subText{
+    font-size: 24;
+    margin: 20px 0;
+}
+.mobileImages{
+    padding: 0 10px;
+}
+.workRightContainer{
+
+}
+.mobileContainer{
+    
+}

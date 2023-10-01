@@ -1,0 +1,163 @@
+.container{
+
+}
+.topContainer{
+    margin: 5% 5% 4% 5%;
+    width:80%;
+    display: flex;
+}
+.topRightContainer{
+    width: 20%;
+    margin-left: 10%;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 1% 3%;
+}
+.topLeftContainer{
+    width: 80%;
+}
+.bold{
+    font-weight: bold;
+    padding-right: 2px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 28px;
+}
+.listItem{
+    list-style-type: none;
+    padding-top: 15px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 28px;
+}
+.topTitle{
+    font-size: 40px;
+}
+.topSubtext{
+    margin-top: 5%;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 32px;
+}
+.deliverableContainer{
+    text-align: center;
+}
+.deliverableSection{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.deliverableBox{
+    border: 1px solid black;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.deliverable{
+    font-size: 24px;
+}
+.deliverableTitle{
+    margin-bottom: 5%;
+    padding-top: 5%;
+    font-size: 32px;
+}
+.deliverableIcon{
+    margin-left: 15px;
+}
+.askContainer{
+    width: 80%;
+    margin: auto;
+    margin-top: 15%;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-bottom: 5%;
+    padding: 2% 0;
+}
+.askInnerContainer{
+    width: 60%;
+    margin: auto;
+}
+.askTitle{
+    margin-bottom: 5%;
+    font-size: 32px;
+}
+.askSubtext{
+    font-size: 28px;
+    font-family: 'Quicksand', sans-serif;
+}
+.understandTitle{
+    margin: 0 5%;
+    text-align: center;
+    color: white;
+    background-color: black;
+    font-family: 'Quicksand', sans-serif;
+}
+.contextContainer{
+    margin-top: 3%;
+    text-align: center;
+    margin-bottom: 20%;
+}
+.contextSection{
+    
+}
+.contextTopBoxes{
+    margin-bottom: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contextBottomBoxes{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+.contextBox{
+    border: 1px solid black;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    text-align: center;
+}
+.summaryContainer{
+    margin-top: 3%;
+    text-align: center;
+}
+.summarySection{
+    width: 80%;
+    margin: auto;
+    font-size: 24px;
+    font-family: 'Quicksand', sans-serif;
+}
+.summaryTopSection{
+    display: flex;
+    justify-content: space-between;
+}
+.summaryText{
+    margin-right: 2%;
+}
+.summaryText2{
+    margin-left: 2%;
+}
+.analyzeContainer{
+    text-align: center;
+    margin-top: 3%;
+}
+.analyzeText{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+.defineTitle{
+    margin: 0 5%;
+    text-align: center;
+    color: white;
+    background-color: black;
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 10%;
+    margin-bottom: 20%;
+}
+.deliverableButton{
+    background-color: transparent;
+    border: none;
+}

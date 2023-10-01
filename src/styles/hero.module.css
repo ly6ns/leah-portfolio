@@ -1,0 +1,84 @@
+.container{
+    background-color: white;
+    overflow: hidden; 
+}
+.wrapper{
+    height: -moz-calc(100vh - 180px);
+    height: -webkit-calc(100vh - 180px);
+    height: calc(100vh - (180px));
+    background-color: white;
+}
+.titleSection{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+.titleText{
+    font-family: "ivymode", sans-serif;
+    font-size: 56px;
+    font-weight: 400;
+}
+
+.waveSection{
+    width: 100%;
+    display: flex;
+    position: fixed;
+    bottom: -2vw;
+    justify-content: center;
+}
+.waveContainer1{
+    margin-top: 39vw;
+    height: 13vw;
+    width: 13vw;
+}
+.waveContainer2{
+    opacity: 0;
+    animation: fadeInAnimation linear 0.1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    margin-top: 26vw;
+    height: 26vw;
+    width: 26vw;
+    margin-left: -5px;
+}
+.waveContainer3{
+    opacity: 0;
+    animation: fadeInAnimation linear 0.1s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+    margin-top: 13vw;
+    height: 39vw;
+    width: 39vw;
+    margin-left: -10px;
+}
+.waveContainer4{
+    opacity: 0;
+    animation: fadeInAnimation linear 0.1s;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+    height: 52vw;
+    width: 52vw;
+    margin-left: -20px;
+}
+.waveContainer{
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.waveContent{
+    width: 100%;
+    height: 5%;
+    background-color: #55acee;
+    top: 92%;
+    position: relative;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
