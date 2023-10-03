@@ -29,8 +29,9 @@
     background-color: black;
     color: white;
     padding: 5px 18px;
-    border-color: transparent;
+    border-color: transparent; 
     float: right;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .name{
@@ -39,6 +40,7 @@
 .subText{
     font-size: 24;
     margin: 20px 0;
+    font-family: 'Quicksand', sans-serif;
 }
 .mobileImages{
     padding: 0 10px;

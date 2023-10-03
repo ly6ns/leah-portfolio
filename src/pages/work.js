@@ -21,7 +21,7 @@ export default function Work() {
       <main>
         <div>
           <Header/>
-          <div className={styles.container}>
+          <div className={styles.container}> 
             <div className={styles.workContainer}>
                 <div className={styles.workLeftContainer}>
                     <h1 className={styles.name}>CodefyUI</h1>
@@ -77,9 +77,9 @@ export default function Work() {
                 <div className={styles.workRightContainer}>
                   <Image
                     className={styles.art}
-                    src="/images/iPad Pro 11-Inch.svg"
-                    width={395}
-                    height={284.4}
+                    src="/images/ipad.png"
+                    width={250}
+                    height={300}
                     alt="Art picture 3"
                   />
                 </div>
