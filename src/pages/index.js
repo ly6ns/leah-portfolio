@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <Head>
         <title>Leah Anitto</title>
-        <meta name="description" content="Leah Anitto's personal portfolio" />
+        <meta name="description" content="Leah Annitto's personal portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/Logo.ico" />
         <link rel="stylesheet" href="https://use.typekit.net/jhs3zhj.css"></link>

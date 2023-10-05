@@ -184,6 +184,7 @@
     width: 50%;
     margin: auto;
     margin-top: 5%;
+    font-size: 24px;
 }
 .analyzeBullets{
     font-size: 22px;
@@ -210,7 +211,7 @@
 .defineContainer{
     margin-top: 3%;
     text-align: center;
-    margin-bottom: 15%;
+    margin-bottom: 5%;
 }
 .defineSubTitle{
     margin-bottom: 5%;
@@ -224,6 +225,7 @@
     font-family: 'Quicksand', sans-serif;
     text-align: left;
     margin-bottom: 2%;
+    font-size: 24px;
 }
 .personaSpan{
     font-weight: bold;
@@ -246,7 +248,6 @@
     text-align: center;
 }
 .defineContainer2{
-    margin-top: 3%;
     text-align: center;
     margin-bottom: 10%;
 }
@@ -258,21 +259,21 @@
 .moscowMethodContainer{
     margin: auto;
     position: relative;
-    height: 80vh;
-    width: 90%;
-    margin-bottom: 15%;
+    height: 90vw;
+    width: 90vw;
+    margin-bottom: 5%;
 }
 .flowContainer{
     margin: auto;
     position: relative;
-    height: 95px;
+    height: 10vw;
     width: 100%;
     margin-bottom: 15%;
 }
 .flowContainer2{
     margin: auto;
     position: relative;
-    height: 185px;
+    height: 20vw;
     width: 100%;
     margin-bottom: 15%;
 }
@@ -289,6 +290,124 @@
     margin-bottom: 5%;
 }
 .flowTask{
+    width: 80%;
+    margin: auto;
+}
+.imageSliderContainer{
+}
+.sliderImage{
+    width: 200px;
+}
+.methodology{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
+    font-size: 24px;
+}
+.taskListText{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
+    text-align: left;
+}
+.taskListBox{
+    border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
     width: 60%;
     margin: auto;
+}
+.resultsBox{
+    display: flex;
+    justify-content: space-between;
+}
+.insightsBox{
+    width: 45%;
+    border: 1px solid black;
+    border-radius: 20px;
+    text-align: left;
+    padding: 10px;
+}
+.stepsBox{
+    width: 45%;
+    border: 1px solid black;
+    border-radius: 20px;
+    text-align: left;
+    padding: 10px;
+}
+.insightsText{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
+}
+.analyzeTextSection3{
+    width: 50%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.boxTextQuestion{
+    font-family: 'Quicksand', sans-serif;
+    text-align: left;
+}
+.questionButton{
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.questionBox{
+    width: 70vw;
+    margin: auto;
+    margin-bottom: 10%;
+}
+.deliverableBox2{
+    border: 1px solid black;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.deliverable2{
+    font-size: 24px;
+}
+.questionBox2{
+    width: 70vw;
+    margin: auto;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+.analyzeList2{
+    list-style-type:disc !important;
+    text-align: center;
+}
+.brandContainer{
+    display: flex;
+    justify-content: center;
+}
+.flowContainer3{
+    margin: auto;
+    position: relative;
+    height: 50vw;
+    width: 80%;
+    margin-bottom: 10%;
+    margin-top: 5%;
+}
+.questionBox3{
+    width: 50vw;
+    margin: auto;
+    margin-bottom: 10%;
+}
+.reflectingContainer{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+.reflectInnerContainer{
+    width: 80%;
+    margin: auto;
+}
+.reflectSubtext{
+    font-size: 28px;
+    font-family: 'Quicksand', sans-serif;
 }

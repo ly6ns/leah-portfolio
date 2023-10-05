@@ -7,10 +7,21 @@ import Link from 'next/link'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown} from "@fortawesome/free-solid-svg-icons";
 import { useState } from 'react';
+import { useKeenSlider } from "keen-slider/react"
+import "keen-slider/keen-slider.min.css"
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Savvy() {
+
+    const [sliderRef] = useKeenSlider({
+        mode: "free-snap",
+        slides: {
+          perView: 3.5,
+          spacing: 0,
+        },
+      })
+
     const [showMessage1, setShowMessage1] = useState(0);
     const [showMessage2, setShowMessage2] = useState(0);
     const [showMessage3, setShowMessage3] = useState(0);
@@ -18,6 +29,8 @@ export default function Savvy() {
     const [showMessage5, setShowMessage5] = useState(0);
     const [showMessage6, setShowMessage6] = useState(0);
     const [showMessage7, setShowMessage7] = useState(0);
+    const [showMessage8, setShowMessage8] = useState(0);
+    const [showMessage9, setShowMessage9] = useState(0);
     const onButtonClickHandler1 = () => {
        setShowMessage1(1);
     };
@@ -60,11 +73,23 @@ export default function Savvy() {
      const onButtonClickHandler7Leave = () => {
         setShowMessage7(0);
      };
+     const onButtonClickHandler8 = () => {
+        setShowMessage8(1);
+     };
+     const onButtonClickHandler8Leave = () => {
+        setShowMessage8(0);
+     };
+     const onButtonClickHandler9 = () => {
+        setShowMessage9(1);
+     };
+     const onButtonClickHandler9Leave = () => {
+        setShowMessage9(0);
+     };
   return (
     <>
       <Head>
         <title>Leah Anitto</title>
-        <meta name="description" content="Leah Anitto's personal portfolio" />
+        <meta name="description" content="Leah Annitto's personal portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="https://use.typekit.net/jhs3zhj.css"></link>
@@ -320,14 +345,38 @@ export default function Savvy() {
                         </p>
                     </div>
                     <div className={styles.defineBoxes}>
-                            <div className={styles.contextBox2}>
-                                <p className={styles.deliverable}>How the Current Tools Help Frank</p>
-                                <FontAwesomeIcon icon={faChevronDown} className={styles.deliverableIcon}></FontAwesomeIcon>
+                        <div className={styles.box2}>
+                            <button className={styles.deliverableButton} onMouseEnter={onButtonClickHandler8} onMouseLeave={onButtonClickHandler8Leave}>
+                                <div className={styles.contextBox2} >
+                                    <p className={styles.deliverable}>How the Current Tools Help Frank</p>
+                                    <FontAwesomeIcon icon={faChevronDown} className={styles.deliverableIcon}></FontAwesomeIcon>
+                                </div>
+                            </button>
+                            <div style={{opacity: showMessage8}}>
+                                <ul className={styles.analyzeList}>
+                                    <li className={styles.analyzeBullets}>Reviews of schools</li>
+                                    <li className={styles.analyzeBullets}>Built in maps</li>
+                                    <li className={styles.analyzeBullets}>Extensive search filters</li>
+                                    <li className={styles.analyzeBullets}>Ratings and reviews</li>
+                                </ul>
                             </div>
-                            <div className={styles.contextBox2}>
-                                <p className={styles.deliverable}>Opportunities to Improve</p>
-                                <FontAwesomeIcon icon={faChevronDown} className={styles.deliverableIcon}></FontAwesomeIcon>
+                        </div>
+                        <div className={styles.box2}>
+                            <button className={styles.deliverableButton} onMouseEnter={onButtonClickHandler9} onMouseLeave={onButtonClickHandler9Leave}>
+                                <div className={styles.contextBox2} >
+                                    <p className={styles.deliverable}>Opportunities to Improve</p>
+                                    <FontAwesomeIcon icon={faChevronDown} className={styles.deliverableIcon}></FontAwesomeIcon>
+                                </div>
+                            </button>
+                            <div style={{opacity: showMessage9}}>
+                                <ul className={styles.analyzeList}>
+                                    <li className={styles.analyzeBullets}>Access to parent forums and discussion boards</li>
+                                    <li className={styles.analyzeBullets}>Up-to-date news and information about education  </li>
+                                    <li className={styles.analyzeBullets}>Mobile application</li>
+                                    <li className={styles.analyzeBullets}>An all-in-one digital tool that puts all the best features of the competitors in one place</li>
+                                </ul>
                             </div>
+                        </div>
                     </div>
             </div>
             <div className={styles.defineContainer2}>
@@ -363,7 +412,7 @@ export default function Savvy() {
                    src="/images/MoSCow Method correct image.svg"
                    fill={true}
                    alt="Art picture 1"
-                   style={{ objectFit: 'cover' }}
+                   style={{ objectFit: 'contain', width: '100%', height: '100%' }}
                 />
             </div>
             <div className={styles.defineContainer3}>
@@ -387,7 +436,7 @@ export default function Savvy() {
                                 src="/images/task flow 1 school savvy.svg" 
                                 fill={true}
                                 alt="Art picture 1"
-                                style={{ objectFit: 'cover' }}
+                                style={{ objectFit: 'contain' }}
                             />
                         </div>
                         <div className={styles.flowTask}>
@@ -401,10 +450,247 @@ export default function Savvy() {
                                 src="/images/task flow 2 school savvy.svg"
                                 fill={true}
                                 alt="Art picture 1"
-                                style={{ objectFit: 'cover' }}
+                                style={{ objectFit: 'contain' }}
                             />
                         </div>
                     </div>
+                </div>
+            <div className={styles.defineTitle}>
+                <h1>EXPLORE</h1>
+            </div>
+            <div className={styles.defineContainer3}>
+                    <h1 className={styles.defineSubTitle}>Ideating Around Features</h1>
+                    <div className={styles.flowSection}>
+                        <div className={styles.flowTopSection}>
+                            <p className={styles.defineBody}>
+                                I had an idea, I just needed to get it out on paper and then confirm its viability. I sketched my idea, using 
+                                the apps Streeteasy and Zillow as my model for the screens.
+                            </p>
+                        </div>
+                        <div className={styles.imageSliderContainer}>
+                            <div ref={sliderRef} className="keen-slider">
+                                <div style={{ marginLeft: '0vw' }} className="keen-slider__slide number-slide1"><img className={styles.sliderImage} src="/images/schoolsavvy sketch 1.svg"/></div>
+                                <div style={{ marginLeft: '0vw' }} className="keen-slider__slide number-slide2"><img className={styles.sliderImage} src="/images/school savvy sketch 2.svg"/></div>
+                                <div style={{ marginLeft: '0vw' }} className="keen-slider__slide number-slide3"><img className={styles.sliderImage} src="/images/school savvy skecth 3.svg"/></div>
+                                <div style={{ marginLeft: '0vw' }} className="keen-slider__slide number-slide4"><img className={styles.sliderImage} src="/images/school savvy sketch 4.svg"/></div>
+                                <div style={{ marginLeft: '0vw' }} className="keen-slider__slide number-slide5"><img className={styles.sliderImage} src="/images/school savvy sketch 5.svg"/></div>
+                                <div style={{ marginLeft: '0vw' }} className="keen-slider__slide number-slide6"><img className={styles.sliderImage} src="/images/school savvy sketch 6.svg"/></div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div className={styles.defineContainer3}>
+                    <h1 className={styles.defineSubTitle}>The Construction of Mid-Fidelity Prototypes</h1>
+                    <div className={styles.flowSection}>
+                        <div className={styles.flowTopSection}>
+                            <p className={styles.defineBody}>
+                                In order to validate that the user can identify, save, compare, and decide on a school for their child, I had to test 
+                                prototypes with users. This is where mid-fidelity prototypes come into fruition. I wanted users to focus on function 
+                                over visual appeal so I created mid-fidelity prototypes to test my user flows.
+                            </p>
+                        </div>
+                        <div className={styles.imageSliderContainer}>
+                            <div ref={sliderRef} className="keen-slider">
+                                <div style={{ marginLeft: '0' }} className="keen-slider__slide number-slide1"><img className={styles.sliderImage} src="/images/school savvy midfi 1.svg"/></div>
+                                <div style={{ marginLeft: '0' }} className="keen-slider__slide number-slide2"><img className={styles.sliderImage} src="/images/school savvy midfi 2.svg"/></div>
+                                <div style={{ marginLeft: '0' }} className="keen-slider__slide number-slide3"><img className={styles.sliderImage} src="/images/school savvy midfi 3.svg"/></div>
+                                <div style={{ marginLeft: '0' }} className="keen-slider__slide number-slide4"><img className={styles.sliderImage} src="/images/school savvy midfi 4.svg"/></div>
+                                <div style={{ marginLeft: '0' }} className="keen-slider__slide number-slide5"><img className={styles.sliderImage} src="/images/school savvy midfi 5.svg"/></div>
+                                <div style={{ marginLeft: '0' }} className="keen-slider__slide number-slide6"><img className={styles.sliderImage} src="/images/school savvy midfi 6.svg"/></div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div className={styles.defineContainer3}>
+                    <h1 className={styles.defineSubTitle}>Testing Prototypes on Users</h1>
+                    <div className={styles.flowSection}>
+                        <div className={styles.flowTopSection}>
+                            <p className={styles.defineBody}>
+                                <span className={styles.methodology}>Methodology: </span><br/>
+                                User interviews paired with having them look at my mid-fidelity wireframes and trying to navigate them.
+                            </p>
+                        </div>
+                        <div>
+                            <div className={styles.questionBox}>
+                                <button className={styles.questionButton} onMouseEnter={onButtonClickHandler1} onMouseLeave={onButtonClickHandler1Leave}>
+                                    <div className={styles.deliverableBox2}>
+                                            <p className={styles.deliverable}>Questions to Ask</p>
+                                            <FontAwesomeIcon icon={faChevronDown} className={styles.deliverableIcon}></FontAwesomeIcon>
+                                    </div>
+                                </button>
+                                <div style={{opacity: showMessage1}}>
+                                    <p className={styles.boxTextQuestion}>
+                                        1. How easy was this task to complete?<br/>
+                                        2. What could have made it easier? What was difficult about it?<br/>
+                                        3. What needs to change in this interface?<br/>
+                                        4. When a user doesn’t like something, ask them what about it they don’t like or why it doesn’t work as well as they want it to?<br/>
+                                        5. When a user likes something, ask them to expand, ask them why do you like that feature? What about it works well?<br/>
+                                    </p>
+                                </div>
+                            </div>
+                                <div className={styles.taskListBox}>
+                                    <div className={styles.analyzeTextSection3}>
+                                        <p className={styles.taskListText}>Task List:</p>
+                                        <ul className={styles.analyzeList}>
+                                            <li className={styles.analyzeBullets}>A user wants to find a school with search filters</li>
+                                            <li className={styles.analyzeBullets}>A user wants to save a school to look at later. </li>
+                                            <li className={styles.analyzeBullets}>A user wants to compare two schools.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <p className={styles.defineBody} style={{ margin: '15% 10% 0 10%' }}>
+                                    <span className={styles.methodology}>Evaluation Measures: </span><br/>
+                                    I was conducting qualitative analysis by measuring how well the users were able to do the tasks asked of them. In order to analyze their behavior,
+                                    I took note of how easily they navigated the tasks. And to figure out their attitude, I followed up with questions to figure out how they felt 
+                                    about completing those tasks. Studying user behaviors helped me to determine whether the user flows are functional and intuitive. Can the 
+                                    user efficiently and instinctively follow the steps to complete the task? If they couldn’t, I had to go back to my mid-fidelity prototypes 
+                                    and rework them.
+                                </p>
+                                <div className={styles.defineBody} style={{ margin: '15% 10% 3% 10%' }}>
+                                    <span className={styles.methodology}>Results: </span><br/>
+                                </div>
+                                <div className={styles.resultsBox}>
+                                    <div className={styles.insightsBox}>
+                                        <span className={styles.insightsText}>Key Insights: </span><br/>
+                                        <ul className={styles.analyzeList}>
+                                            <li className={styles.analyzeBullets}>Users want more filters on the initial search page users suggested more information with the search page (ie. top rated schools, schools near you, testimonials, information on the mission or vision of the app)</li>
+                                            <li className={styles.analyzeBullets}>Users liked the navigation and thought it was intuitive, but they wanted a “continue as guest” at login</li>
+                                            <li className={styles.analyzeBullets}>users didn’t understand that the numbers in spheres on the favorites page were buttons to select or deselect schools to compare</li>
+                                        </ul>
+                                    </div>
+                                    <div className={styles.stepsBox}>
+                                        <span className={styles.insightsText}>Next Steps: </span><br/>
+                                        <ul className={styles.analyzeList}>
+                                            <li className={styles.analyzeBullets}>I made the initial search page into a homepage to allow for more search filters right away and to allow for more options to pick from besides just searching</li>
+                                            <li className={styles.analyzeBullets}>I reworked the favorites page to be clearer and look better </li>
+                                            <li className={styles.analyzeBullets}>I added a continue as guest function at login</li>
+                                        </ul> 
+                                    </div>
+                                    
+                                </div>
+                        </div> 
+                    </div>
+            </div>
+            <div className={styles.defineTitle}>
+                <h1>A SOLUTION BUILT FOR FRANK</h1>
+            </div>
+            <div className={styles.defineContainer2}>
+                    <h1 className={styles.defineSubTitle}>The Formation of a Style Tile</h1>
+                    <div>
+                        <p className={styles.defineBody} style={{ margin: '5% 10% 0 10%' }}>
+                            <span className={styles.methodology}>Why a Style Tile? </span><br/>
+                            A style allowed me to form a common visual language between my stakeholders and me.
+                            Style tiles also provide a catalyst for discussions around the preferences and goals
+                            of my client and me.
+                        </p>
+                    </div>
+                    <div>
+                        <p className={styles.defineBody} style={{ margin: '5% 10% 0 10%' }}>
+                            <span className={styles.methodology}>Branding</span><br/>
+                            The brand adjectives came from the combination of it being a school-related site, so it had to be appealing and friendly,
+                            but it also needed to be trusted and efficient. Their purpose is to translate my ideas and visions into tangible words that
+                            my stakeholders and any audience can understand. Brand adjectives also guide the decision making process of the style tile
+                            and the eventual UI of the app.
+                        </p>
+                    </div>
+                    <div className={styles.questionBox2}>
+                        <button className={styles.questionButton} style={{ padding: '0 5% 0 5%' }} onMouseEnter={onButtonClickHandler1} onMouseLeave={onButtonClickHandler1Leave}>
+                            <div className={styles.deliverableBox} style={{ padding: '2px 5% 2px 5%' }}>
+                                <p className={styles.deliverable}>Brand Adjectives</p>
+                                <FontAwesomeIcon icon={faChevronDown} className={styles.deliverableIcon}></FontAwesomeIcon>
+                            </div>
+                        </button>
+                        <div className={styles.brandContainer} style={{opacity: showMessage1}}>
+                            <ul className={styles.analyzeList2}>
+                                <li className={styles.analyzeBullets}>Educative</li>
+                                <li className={styles.analyzeBullets}>Simple</li>
+                                <li className={styles.analyzeBullets}>Decisive</li>
+                                <li className={styles.analyzeBullets}>Affable</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <p className={styles.defineBody} style={{ margin: '0 10% 0 10%' }}>
+                            <span className={styles.methodology}>Colors: </span>
+                            Colors needed to be friendly and inviting but professional and tight.
+                        </p>
+                    </div>
+                    <div>
+                        <p className={styles.defineBody} style={{ margin: '3% 10% 0 10%' }}>
+                            <span className={styles.methodology}>Fonts: </span>
+                            The font pairing also needed to be clearly related to schools, but also demonstrate the high caliber and quality of this tool.
+                        </p>
+                    </div>
+                    <div className={styles.flowContainer3} >
+                        <Image
+                            className={styles.moscowImage}
+                            src="/images/style tile school savvy.svg"
+                            fill={true}
+                            alt="Art picture 1"
+                            style={{ objectFit: 'contain' }}
+                        />
+                    </div>
+                    <h1 className={styles.defineSubTitle}>Designing For Our Users</h1>
+                    <div className={styles.imageSliderContainer}>
+                        <div ref={sliderRef} className="keen-slider">
+                            <div style={{ marginLeft: '0' }} className="keen-slider__slide number-slide1"><img className={styles.sliderImage} src="/images/iphone hi fi 1 school savvy.svg"/></div>
+                            <div style={{ marginLeft: '0' }} className="keen-slider__slide number-slide2"><img className={styles.sliderImage} src="/images/iphone school savvy hi fi 2.svg"/></div>
+                            <div style={{ marginLeft: '0' }} className="keen-slider__slide number-slide3"><img className={styles.sliderImage} src="/images/iphone school savvy hi fi 3.svg"/></div>
+                            <div style={{ marginLeft: '0' }} className="keen-slider__slide number-slide4"><img className={styles.sliderImage} src="/images/iphone school savvy hi fi 4.svg"/></div>
+                            <div style={{ marginLeft: '0' }} className="keen-slider__slide number-slide5"><img className={styles.sliderImage} src="/images/iphone school savvy hi fi 5.svg"/></div>
+                            <div style={{ marginLeft: '0' }} className="keen-slider__slide number-slide6"><img className={styles.sliderImage} src="/images/iphone school savvy hifi 6.svg"/></div>
+                        </div>
+                    </div>
+            </div>
+            <div className={styles.defineTitle}>
+                <h1>WHAT THE FUTURE HOLDS</h1>
+            </div>
+            <div>
+                <div className={styles.questionBox3}>
+                    <button className={styles.questionButton} onMouseEnter={onButtonClickHandler1} onMouseLeave={onButtonClickHandler1Leave}>
+                        <div className={styles.deliverableBox2}>
+                            <p className={styles.deliverable}>Next Steps</p>
+                            <FontAwesomeIcon icon={faChevronDown} className={styles.deliverableIcon}></FontAwesomeIcon>
+                        </div>
+                    </button>
+                    <div style={{opacity: showMessage1}}>
+                        <p className={styles.boxTextQuestion}>
+                            <ul className={styles.analyzeList2}>
+                                <li className={styles.analyzeBullets}>Further usability testing</li>
+                                <li className={styles.analyzeBullets}>Build out more features </li>
+                                <li className={styles.analyzeBullets}>Improve compare functionality to include more than 2 schools and to be more comprehensive </li>
+                                <li className={styles.analyzeBullets}>Create the tablet and desktop versions</li>
+                                <li className={styles.analyzeBullets}>Create the Android version</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+                <div className={styles.reflectingContainer}>
+                    <h1 className={styles.defineSubTitle}>Reflecting on the Project</h1>
+                </div>
+                <div className={styles.askContainer}>
+                <div className={styles.reflectInnerContainer}>
+                    <p className={styles.reflectSubtext}>
+                        SchoolSavvy was the first project I took on from start to finish, where I was given
+                        nothing but an idea of the problem. I was designing for an unfamiliar domain in that
+                        I am not a parent looking for schools for my children; I am not a parent at all. The
+                        only knowledge of the domain I have is being the teacher parents are consulting with
+                        about next steps and schools for their children.
+                    </p><br/><br/>
+                    <p className={styles.reflectSubtext}>
+                        This project required me to spend a lot of time putting myself in the shoes of a user
+                        I have never come even close to being. I was able to push past that uncomfortability
+                        and focus on UI interactions, tweaking and iterating again and again on designs, and
+                        how to make my interface make sense to the user and be intuitive to use.
+                    </p><br/><br/>
+                    <p className={styles.reflectSubtext}>
+                        I had to abandon my feelings as a former educator and listen intently to the users and
+                        what they wanted and needed. I had to combine sources of research to create the most 
+                        viable product, putting aside my own sensibilities and preferences, and giving the 
+                        parents what they want.
+                    </p>
+                </div>
+            </div>
             </div>
           </div>
         </div>

@@ -19,3 +19,9 @@
     font-family: 'Comfortaa', cursive;
     font-weight: 400;
 }
+.link:visited {
+    color:black;
+}
+.link{
+    color:black;
+}

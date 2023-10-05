@@ -12,7 +12,7 @@ export default function Contact() {
     <>
       <Head>
         <title>Leah Anitto</title>
-        <meta name="description" content="Leah Anitto's personal portfolio" />
+        <meta name="description" content="Leah Annitto's personal portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="https://use.typekit.net/jhs3zhj.css"></link>
@@ -26,7 +26,7 @@ export default function Contact() {
           <div className={styles.container}>
             <div className={styles.innerContainer}>
                 <h1>Email: <span className={styles.email}>leahannitto@gmail.com</span></h1>
-                <h1 className={styles.linkedin}>Linkedin</h1>
+                <Link target="_blank" className={styles.link} href="https://www.linkedin.com/in/leah-annitto"><h1 className={styles.linkedin}>Linkedin</h1></Link>
             </div>
           </div>
         </div>
