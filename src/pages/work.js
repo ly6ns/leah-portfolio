@@ -72,7 +72,7 @@ export default function Work() {
                 <div className={styles.workLeftContainer}>
                     <h1 className={styles.name}>Haydn</h1>
                     <p className={styles.subText}>Working to make AI communicate in writing that is equivalent to a beach formal dress code – both relaxed and polished.</p>
-                    <Link href="/savvy"><button className={styles.workButton}>Read Case Study</button></Link>
+                    <Link href="/haydn"><button className={styles.workButton}>Read Case Study</button></Link>
                 </div>
                 <div className={styles.workRightContainer}>
                   <Image

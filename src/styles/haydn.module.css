@@ -27,6 +27,7 @@
     padding-top: 15px;
     font-family: 'Quicksand', sans-serif;
     font-size: 28px;
+    font-weight: 200;
 }
 .topTitle{
     font-size: 40px;
@@ -35,14 +36,29 @@
     margin-top: 5%;
     font-family: 'Quicksand', sans-serif;
     font-size: 32px;
+    font-weight: 200;
 }
 .deliverableContainer{
     text-align: center;
 }
 .deliverableSection{
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    flex-direction: column;
+}
+.deliverableDiv{
+    margin-bottom: 2%;
+    text-align: left;
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 24px;
+    font-weight: 100;
+}
+.deliverableDivP{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 24px;
+    font-weight: 100;
 }
 .box{
     height: 280px;
@@ -52,16 +68,16 @@
     width: 300px;
 }
 .box3{
-    height: 320px;
-    width: 300px;
+    height: 280px;
+    width: min-content;
+}
+.box4{
+    height: 280px;
+    width: 45%;
 }
 .boxText{
     font-family: 'Quicksand', sans-serif;
     text-align: left;
-    font-size: 22px;
-    font-weight: 400;
-    font-family: 'Quicksand', sans-serif;
-    width: 280px;
 }
 .deliverableBox{
     border: 1px solid black;
@@ -84,26 +100,43 @@
 .askContainer{
     width: 80%;
     margin: auto;
-    margin-top: 0;
+    margin-top: 8%;
     border: 1px solid black;
     border-radius: 20px;
     margin-bottom: 5%;
     padding: 2% 0;
 }
 .askInnerContainer{
+    width: 80%;
+    margin: auto;
+}
+.askContainer2{
+    width: 100%;
+    margin: auto;
+    margin-top: 8%;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-bottom: 5%;
+    padding: 2% 0;
+}
+.askInnerContainer2{
     width: 60%;
     margin: auto;
+    text-align: left;
+    padding:2%;
 }
 .askTitle{
     margin-bottom: 5%;
     font-size: 32px;
+    text-align: center;
 }
 .askSubtext{
     font-size: 28px;
     font-family: 'Quicksand', sans-serif;
+    font-weight: 200;
 }
 .understandTitle{
-    margin: 0 5%;
+    margin: 10% 5%;
     text-align: center;
     color: white;
     background-color: black;
@@ -136,6 +169,15 @@
     justify-content: center;
     align-items: center;
     width: 300px;
+    text-align: center;
+}
+.contextBox3{
+    border: 1px solid black;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     text-align: center;
 }
 .summaryContainer{
@@ -188,6 +230,9 @@
     list-style-type:disc !important;
     
 }
+.analyzeList2{
+    list-style-type:disc !important;
+}
 .analyzeTextSection2{
     width: 50%;
     margin: auto;
@@ -196,7 +241,16 @@
 }
 .analyzeBullets{
     font-size: 22px;
-    font-weight: 400;
+    font-weight: 100;
+    font-family: 'Quicksand', sans-serif;
+    text-align: left;
+    list-style: disc outside none;
+    display: list-item;
+    margin-left: 1em;
+}
+.analyzeBullets2{
+    font-size: 22px;
+    font-weight: 100;
     font-family: 'Quicksand', sans-serif;
     text-align: left;
     list-style: disc outside none;
@@ -216,6 +270,11 @@
     background-color: transparent;
     border: none;
 }
+.deliverableButton2{
+    background-color: transparent;
+    border: none;
+    width: 100%;
+}
 .defineContainer{
     margin-top: 3%;
     text-align: center;
@@ -223,6 +282,16 @@
 }
 .defineSubTitle{
     margin-bottom: 5%;
+}
+.defineSubTitle2{
+    margin-bottom: 5%;
+    margin-top: 15%;
+}
+.defineSubTitle3{
+    margin-bottom: -5%;
+}
+.boldText{
+    font-weight: bolder;
 }
 .personaText{
     font-family: 'Quicksand', sans-serif;
@@ -234,6 +303,7 @@
     text-align: left;
     margin-bottom: 2%;
     font-size: 24px;
+    font-weight: 200;
 }
 .personaSpan{
     font-weight: bold;
@@ -242,6 +312,13 @@
 .defineBoxes{
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin-top: 10%;
+}
+.defineBoxes2{
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
     margin-top: 10%;
@@ -355,6 +432,9 @@
 .boxTextQuestion{
     font-family: 'Quicksand', sans-serif;
     text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 100;
 }
 .questionButton{
     background-color: transparent;
@@ -364,9 +444,13 @@
     justify-content: center;
 }
 .questionBox{
-    width: 70vw;
+    width: 40vw;
     margin: auto;
     margin-bottom: 10%;
+}
+.boxInside{
+    width: 60%;
+    margin: auto;
 }
 .deliverableBox2{
     border: 1px solid black;
@@ -396,8 +480,8 @@
 .flowContainer3{
     margin: auto;
     position: relative;
-    height: 50vw;
-    width: 80%;
+    height: 53vw;
+    width: 85%;
     margin-bottom: 10%;
     margin-top: 5%;
 }
@@ -418,4 +502,47 @@
 .reflectSubtext{
     font-size: 28px;
     font-family: 'Quicksand', sans-serif;
+    font-weight: 200;
+}
+.resultsBox2{
+    display: flex;
+    justify-content: space-evenly;
+}
+.insightsBox2{
+    width: 30%;
+    position: relative;
+    height: 55vh;
+}
+.stepsBox2{
+    width: 30%;
+    position: relative;
+    height: 55vh;
+}
+.moscowMethodContainer2{
+    margin: auto;
+    position: relative;
+    height: 70vw;
+    width: 70vw;
+    margin-bottom: 5%;
+}
+.moscowMethodContainer3{
+    margin: auto;
+    position: relative;
+    height: 90vw;
+    width: 90vw;
+    margin-bottom: 5%;
+    margin-top: -10%;
+}
+.boxContainer{
+    width: 80%;
+    margin: auto;
+}
+.boxContainer2{
+    width: 90%;
+    margin: auto;
+}
+.askInnerContainer2LI{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 200;
+    margin-top: 1%;
 }
