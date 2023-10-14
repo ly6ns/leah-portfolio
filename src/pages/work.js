@@ -26,7 +26,7 @@ export default function Work() {
                 <div className={styles.workLeftContainer}>
                     <h1 className={styles.name}>CodefyUI</h1>
                     <p className={styles.subText}>Connecting software developers with product designers to produce a powerful tool that creates code for designs using AI.</p>
-                    <Link href="/savvy"><button className={styles.workButton}>Read Case Study</button></Link>
+                    <Link href="/codefyUI"><button className={styles.workButton}>Read Case Study</button></Link>
                 </div>
                 <div className={styles.workRightContainer}>
                   <Image

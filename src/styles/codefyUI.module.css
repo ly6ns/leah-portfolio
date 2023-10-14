@@ -1,0 +1,575 @@
+.container{
+
+}
+.topContainer{
+    margin: 5% 5% 4% 5%;
+    width:90%;
+    display: flex;
+}
+.topRightContainer{
+    width: 30%;
+    margin-left: 10%;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 1% 3%;
+}
+.topLeftContainer{
+    width: 80%;
+}
+.bold{
+    font-weight: bold;
+    padding-right: 2px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 28px;
+}
+.listItem{
+    list-style-type: none;
+    padding-top: 15px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 28px;
+    font-weight: 200;
+}
+.topTitle{
+    font-size: 40px;
+}
+.topSubtext{
+    margin-top: 5%;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 32px;
+    font-weight: 200;
+}
+.deliverableContainer{
+    text-align: center;
+}
+.deliverableSection{
+    display: flex;
+    flex-direction: column;
+}
+.deliverableDiv{
+    margin-bottom: 2%;
+    text-align: left;
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 24px;
+    font-weight: 100;
+}
+.deliverableDivP{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 24px;
+    font-weight: 100;
+}
+.box{
+    height: 280px;
+}
+.box2{
+    height: 280px;
+    width: 300px;
+}
+.box3{
+    height: 280px;
+    width: min-content;
+}
+.box4{
+    height: 280px;
+    width: 45%;
+}
+.boxText{
+    font-family: 'Quicksand', sans-serif;
+    text-align: left;
+}
+.deliverableBox{
+    border: 1px solid black;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.deliverable{
+    font-size: 24px;
+}
+.deliverableTitle{
+    margin-bottom: 5%;
+    padding-top: 5%;
+    font-size: 32px;
+}
+.deliverableIcon{
+    margin-left: 15px;
+}
+.askContainer{
+    width: 80%;
+    margin: auto;
+    margin-top: 8%;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-bottom: 5%;
+    padding: 2% 0;
+}
+.askInnerContainer{
+    width: 80%;
+    margin: auto;
+}
+.askContainer2{
+    width: 100%;
+    margin: auto;
+    margin-top: 8%;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-bottom: 5%;
+    padding: 2% 0;
+}
+.askInnerContainer2{
+    width: 60%;
+    margin: auto;
+    text-align: left;
+    padding:2%;
+}
+.askTitle{
+    margin-bottom: 5%;
+    font-size: 32px;
+    text-align: center;
+}
+.askSubtext{
+    font-size: 28px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 200;
+}
+.askSubtext2{
+    font-size: 28px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 200;
+    text-align: left;
+}
+.understandTitle{
+    margin: 10% 5%;
+    text-align: center;
+    color: white;
+    background-color: black;
+    font-family: 'Quicksand', sans-serif;
+}
+.contextContainer{
+    margin-top: 3%;
+    text-align: center;
+    margin-bottom: 0;
+}
+.contextSection{
+    
+}
+.contextTopBoxes{
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contextBottomBoxes{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+.contextBox{
+    border: 1px solid black;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    text-align: center;
+}
+.contextBox3{
+    border: 1px solid black;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+.summaryContainer{
+    margin-top: -5%;
+    text-align: center;
+}
+.summarySection{
+    width: 80%;
+    margin: auto;
+    font-size: 24px;
+    font-family: 'Quicksand', sans-serif;
+}
+.summaryTopSection{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+.summaryText{
+    margin-right: 2%;
+    font-family: 'Quicksand', sans-serif;
+    text-align: left;
+}
+.summaryText2{
+    margin-left: 2%;
+    font-family: 'Quicksand', sans-serif;
+    text-align: left;
+}
+.analyzeContainer{
+    text-align: center;
+    margin-top: 3%;
+}
+.analyzeTextSection{
+    width: 60%;
+    margin: auto;
+    text-align: left;
+}
+.analyzeText{
+    font-size: 22px;
+    font-weight: 400;
+    font-family: 'Quicksand', sans-serif;
+}
+.analyzeText2{
+    font-size: 22px;
+    font-weight: 400;
+    font-family: 'Quicksand', sans-serif;
+    text-align: left;
+    margin-bottom: 3%;
+}
+.analyzeList{
+    list-style-type:disc !important;
+    
+}
+.analyzeList2{
+    list-style-type:disc !important;
+}
+.analyzeTextSection2{
+    width: 50%;
+    margin: auto;
+    margin-top: 5%;
+    font-size: 24px;
+}
+.analyzeBullets{
+    font-size: 22px;
+    font-weight: 100;
+    font-family: 'Quicksand', sans-serif;
+    text-align: left;
+    list-style: disc outside none;
+    display: list-item;
+    margin-left: 1em;
+}
+.analyzeBullets2{
+    font-size: 22px;
+    font-weight: 100;
+    font-family: 'Quicksand', sans-serif;
+    text-align: left;
+    list-style: disc outside none;
+    display: list-item;
+    margin-left: 1em;
+}
+.defineTitle{
+    margin: 0 5%;
+    text-align: center;
+    color: white;
+    background-color: black;
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.deliverableButton{
+    background-color: transparent;
+    border: none;
+}
+.deliverableButton2{
+    background-color: transparent;
+    border: none;
+    width: 100%;
+}
+.defineContainer{
+    margin-top: 3%;
+    text-align: center;
+    margin-bottom: 5%;
+}
+.defineSubTitle{
+    margin-bottom: 5%;
+}
+.defineSubTitle2{
+    margin-bottom: 5%;
+    margin-top: 15%;
+}
+.defineSubTitle3{
+    margin-bottom: -5%;
+}
+.boldText{
+    font-weight: bolder;
+}
+.boldText2{
+    font-weight: bolder;
+    font-family: 'Quicksand', sans-serif;
+}
+.personaText{
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    margin: 1% 0;
+    
+}
+.defineBody{
+    font-family: 'Quicksand', sans-serif;
+    text-align: left;
+    margin-bottom: 2%;
+    font-size: 24px;
+    font-weight: 200;
+}
+.defineBody2{
+    font-family: 'Quicksand', sans-serif;
+    text-align: left;
+    margin-bottom: 2%;
+    margin-top: 6%;
+    font-size: 24px;
+    font-weight: 200;
+}
+.personaSpan{
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+}
+.defineBoxes{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin-top: 10%;
+}
+.defineBoxes2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: 10%;
+}
+.contextBox2{
+    border: 1px solid black;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    text-align: center;
+}
+.defineContainer2{
+    text-align: center;
+    margin-bottom: 10%;
+}
+.defineContainer3{
+    margin-top: 3%;
+    text-align: center;
+    margin-bottom: 5%;
+}
+.moscowMethodContainer{
+    margin: auto;
+    position: relative;
+    height: 90vw;
+    width: 90vw;
+    margin-bottom: 5%;
+}
+.flowContainer{
+    margin: auto;
+    position: relative;
+    height: 10vw;
+    width: 100%;
+    margin-bottom: 15%;
+}
+.flowContainer2{
+    margin: auto;
+    position: relative;
+    height: 20vw;
+    width: 100%;
+    margin-bottom: 15%;
+}
+.flowSection{
+    width: 90%;
+    margin: auto;
+    font-size: 24px;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+.flowTopSection{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 5%;
+}
+.flowTask{
+    width: 80%;
+    margin: auto;
+}
+.imageSliderContainer{
+}
+.sliderImage{
+    width: 200px;
+}
+.methodology{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
+    font-size: 24px;
+}
+.taskListText{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
+    text-align: left;
+}
+.taskListBox{
+    border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+}
+.resultsBox{
+    display: flex;
+    justify-content: space-between;
+}
+.insightsBox{
+    width: 45%;
+    border: 1px solid black;
+    border-radius: 20px;
+    text-align: left;
+    padding: 10px;
+}
+.stepsBox{
+    width: 45%;
+    border: 1px solid black;
+    border-radius: 20px;
+    text-align: left;
+    padding: 10px;
+}
+.insightsText{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
+}
+.analyzeTextSection3{
+    width: 50%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.boxTextQuestion{
+    font-family: 'Quicksand', sans-serif;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 100;
+}
+.questionButton{
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.questionBox{
+    width: 40vw;
+    margin: auto;
+    margin-bottom: 10%;
+}
+.boxInside{
+    width: 60%;
+    margin: auto;
+}
+.deliverableBox2{
+    border: 1px solid black;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.deliverable2{
+    font-size: 24px;
+}
+.questionBox2{
+    width: 70vw;
+    margin: auto;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+.analyzeList2{
+    list-style-type:disc !important;
+    text-align: center;
+}
+.brandContainer{
+    display: flex;
+    justify-content: center;
+}
+.flowContainer3{
+    margin: auto;
+    position: relative;
+    height: 53vw;
+    width: 85%;
+    margin-bottom: 10%;
+    margin-top: 5%;
+}
+.questionBox3{
+    width: 50vw;
+    margin: auto;
+    margin-bottom: 10%;
+}
+.reflectingContainer{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+.reflectInnerContainer{
+    width: 80%;
+    margin: auto;
+}
+.reflectSubtext{
+    font-size: 28px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 200;
+}
+.resultsBox2{
+    display: flex;
+    justify-content: space-evenly;
+}
+.insightsBox2{
+    width: 30%;
+    position: relative;
+    height: 55vh;
+}
+.stepsBox2{
+    width: 30%;
+    position: relative;
+    height: 55vh;
+}
+.moscowMethodContainer2{
+    margin: auto;
+    position: relative;
+    height: 70vw;
+    width: 70vw;
+    margin-bottom: 5%;
+}
+.moscowMethodContainer3{
+    margin: auto;
+    position: relative;
+    height: 90vw;
+    width: 90vw;
+    margin-bottom: 5%;
+    margin-top: -10%;
+}
+.boxContainer{
+    width: 80%;
+    margin: auto;
+}
+.boxContainer2{
+    width: 90%;
+    margin: auto;
+}
+.askInnerContainer2LI{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 200;
+    margin-top: 1%;
+    list-style: none;
+    list-style-type: none !important;
+}
+.askInnerContainerP{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 200;
+    margin: 3% 0;
+
+}
