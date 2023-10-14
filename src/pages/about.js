@@ -44,21 +44,21 @@ export default function About() {
             <div className={styles.imageContainer}>
                 <Image
                   className={styles.art}
-                  src="/images/art 1.jpg"
+                  src="/images/painting1.jpeg"
                   width={400}
                   height={500}
                   alt="Art picture 1"
                 />
                 <Image
                   className={styles.art}
-                  src="/images/art 2.jpg"
+                  src="/images/painting2.jpeg"
                   width={400}
                   height={500}
                   alt="Art picture 2"
                 />
                 <Image
                   className={styles.art}
-                  src="/images/art 3.jpg"
+                  src="/images/painting3.jpg"
                   width={400}
                   height={500}
                   alt="Art picture 3"
