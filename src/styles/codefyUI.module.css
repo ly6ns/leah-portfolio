@@ -79,6 +79,11 @@
     font-family: 'Quicksand', sans-serif;
     text-align: left;
 }
+.boxText2{
+    font-family: 'Quicksand', sans-serif;
+    text-align: left;
+    font-size: 24px;
+}
 .deliverableBox{
     border: 1px solid black;
     padding: 12px;
@@ -400,7 +405,10 @@
 .imageSliderContainer{
 }
 .sliderImage{
-    width: 200px;
+    width: 300px;
+}
+.sliderImage2{
+    height: 65%;
 }
 .methodology{
     font-family: 'Quicksand', sans-serif;
@@ -454,6 +462,7 @@
     margin-left: auto;
     margin-right: auto;
     font-weight: 100;
+    font-size: 24px;
 }
 .questionButton{
     background-color: transparent;

@@ -40,7 +40,7 @@ export default function CodeyUI() {
 	return (
 		<>
 			<Head>
-				<title>Leah Anitto</title>
+				<title>Leah Annitto</title>
 				<meta name="description" content="Leah Annitto's personal portfolio" />
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<link rel="icon" href="/favicon.ico" />
@@ -51,7 +51,7 @@ export default function CodeyUI() {
 				<link rel="preconnect" href="https://fonts.googleapis.com" />
 				<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 				<link
-					href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500&display=swap"
+					href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap"
 					rel="stylesheet"
 				></link>
 			</Head>
@@ -108,7 +108,7 @@ export default function CodeyUI() {
 												></FontAwesomeIcon>
 											</div>
 										</button>
-										<div style={{ opacity: showMessage1 }}>
+										<div  style={{ opacity: showMessage1 }}>
                                             <p className={styles.boxTextQuestion}>
 												1. Problem Statement 
 												<br />
@@ -201,7 +201,7 @@ export default function CodeyUI() {
 											</div>
 										</button>
 										<div style={{ opacity: showMessage1 }}>
-											<p className={styles.boxText}>
+											<p className={styles.boxText2}>
                                                 It’s important to know the context of the problem. Without knowing what other websites in the AI space are doing, there’s no way to figure out how to solve the problem.
 											</p>
 										</div>
@@ -221,7 +221,7 @@ export default function CodeyUI() {
 											</div>
 										</button>
 										<div style={{ opacity: showMessage2 }}>
-											<p className={styles.boxText}>
+											<p className={styles.boxText2}>
                                                 Competitive research showed that AI tools have their purpose and their “why this tool?” clearly lined out. For other sites that offer designs or art, for instance Dribbble, the brand consistency is everything– inCTAs, in the information architecture, and in the feel of the site.
 											</p>
 										</div>
@@ -465,7 +465,7 @@ export default function CodeyUI() {
 											className="keen-slider__slide number-slide1"
 										>
 											<img
-												className={styles.sliderImage}
+												className={styles.sliderImage2}
 												src="/images/Group 1000004216.svg"
 											/>
 										</div>
@@ -474,7 +474,7 @@ export default function CodeyUI() {
 											className="keen-slider__slide number-slide2"
 										>
 											<img
-												className={styles.sliderImage}
+												className={styles.sliderImage2}
 												src="/images/Group 1000004217.svg"
 											/>
 										</div>
@@ -483,7 +483,7 @@ export default function CodeyUI() {
 											className="keen-slider__slide number-slide3"
 										>
 											<img
-												className={styles.sliderImage}
+												className={styles.sliderImage2}
 												src="/images/Group 1000004218.svg"
 											/>
 										</div>
@@ -492,7 +492,7 @@ export default function CodeyUI() {
 											className="keen-slider__slide number-slide4"
 										>
 											<img
-												className={styles.sliderImage}
+												className={styles.sliderImage2}
 												src="/images/Group 1000004219.svg"
 											/>
 										</div>
@@ -501,7 +501,7 @@ export default function CodeyUI() {
 											className="keen-slider__slide number-slide5"
 										>
 											<img
-												className={styles.sliderImage}
+												className={styles.sliderImage2}
 												src="/images/Group 1000004220.svg"
 											/>
 										</div>
