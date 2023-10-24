@@ -7,7 +7,7 @@ export default function Hero() {
     <div className={styles.container}>
         <div className={styles.wrapper}>
           <div className={styles.titleSection}>
-            <h1 className={styles.titleText}>leah annitto design</h1>
+            <h1 className={styles.titleText}>Leah Annitto Design</h1>
           </div>
           <h1 className={styles.been}>a look at where I've been...</h1>
             <div className={styles.imageContainer}>
