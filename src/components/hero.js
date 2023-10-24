@@ -1,5 +1,6 @@
 import Image from 'next/image'
-import styles from '../styles/hero.module.css'
+import styles from '../styles/about.module.css'
+import Link from 'next/link'
 
 export default function Hero() {
   return (
@@ -8,22 +9,52 @@ export default function Hero() {
           <div className={styles.titleSection}>
             <h1 className={styles.titleText}>leah annitto design</h1>
           </div>
-          <div className={styles.waveSectionContainer}>
-          <div className={styles.waveSection}>
-            <div className={`${styles.waveContainer} ${styles.waveContainer1}`} style={{backgroundImage: `url('wave.svg')`}}>
-            <div className={styles.waveContent}></div>
+          <h1 className={styles.been}>a look at where I've been...</h1>
+            <div className={styles.imageContainer}>
+                <Image
+                  className={styles.art}
+                  src="/images/painting1.jpeg"
+                  width={400}
+                  height={500}
+                  alt="Art picture 1"
+                />
+                <Image
+                  className={styles.art}
+                  src="/images/painting2.jpeg"
+                  width={400}
+                  height={500}
+                  alt="Art picture 2"
+                />
+                <Image
+                  className={styles.art}
+                  src="/images/painting3.jpg"
+                  width={400}
+                  height={500}
+                  alt="Art picture 3"
+                />
             </div>
-            <div className={`${styles.waveContainer} ${styles.waveContainer2}`} style={{backgroundImage: `url('wave-1.svg')`}}>
-            <div className={styles.waveContent}></div>
+            <div>
+              <h1 className={styles.heading}>...and where I am heading</h1>
             </div>
-            <div className={`${styles.waveContainer} ${styles.waveContainer3}`} style={{backgroundImage: `url('wave-2.svg')`}}>
-            <div className={styles.waveContent}></div>
+            <div className={styles.bottom}>
+                <Image
+                  className={styles.art}
+                  src="/images/iphone hi fi 1 school savvy.svg"
+                  width={400}
+                  height={650}
+                  alt="Art picture 3"
+                />
+                <div className={styles.bottomRight}>
+                  <Image
+                    className={styles.art}
+                    src="/images/Logo.svg"
+                    width={250}
+                    height={250}
+                    alt="Art picture 3"
+                  />
+                  <Link className={styles.workLink} href='/work'>Enjoy my work.</Link>
+                </div>
             </div>
-            <div className={`${styles.waveContainer} ${styles.waveContainer4}`} style={{backgroundImage: `url('wave-3.svg')`}}>
-            <div className={styles.waveContent}></div>
-            </div>
-          </div>
-          </div>
         </div>
     </div>
   )

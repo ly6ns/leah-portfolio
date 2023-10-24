@@ -22,9 +22,8 @@ export default function Home() {
       </Head>
       <main>
         <div>
-          {/*<Header/>
-          <Hero/>*/}
-          <About/>
+          <Header/>
+          <Hero/>
         </div>
       </main>
     </>
