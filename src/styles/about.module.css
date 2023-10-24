@@ -36,6 +36,7 @@
 }
 .workLink:visited{
     color: black;
+    font-family: 'Quicksand', sans-serif;
 }
 .been{
     font-size: 64px;
