@@ -21,7 +21,7 @@ export default function Header() {
             <ul className={styles.list}>
                 <Link className={styles.menuItems} href="/about">about</Link>
                 <Link className={styles.menuItems} href="/work">work</Link>
-                <Link className={styles.menuItems} target="_blank" href="/Resume-Leah B Annitto.pdf">resume</Link>
+                <Link className={styles.menuItems} target="_blank" href="/Leah Annitto_Resume.pdf">resume</Link>
                 <Link className={styles.menuItems} href="/contact">contact</Link>
             </ul>
           </div>
