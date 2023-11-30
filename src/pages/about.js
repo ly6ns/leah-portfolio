@@ -36,7 +36,7 @@ export default function About() {
             <p className={styles.content}> 
               When I’m not pushing pixels on a screen, you can find me riding my bike across the five boroughs, reading, or in some sort of body of water, playing and living my best mermaid life.
             </p>
-            <Link className={styles.resumeLink} target="_blank" href="/Leah Annitto_Resume_.pdf">Take a look at my resume.</Link>
+            <Link className={styles.resumeLink} target="_blank" href="/Leah Annitto_Resume.pdf">Take a look at my resume.</Link>
           </div>
 
         </div>
