@@ -22,7 +22,7 @@ export default function Work() {
         <div>
           <Header/>
           <div className={styles.container}>
-          <div className={styles.workContainer}>
+          <div className={styles.workContainer} style={{ marginBottom: '-80px' }}>
                 <div className={styles.workLeftContainer}>
                     <h1 className={styles.name}>Style Me- With Roni</h1>
                     <p className={styles.subText}>Fashion consultant turned therapist on a quest to change the nature of styling people.</p>
@@ -38,7 +38,7 @@ export default function Work() {
                   />
                 </div>
             </div>
-            <div className={styles.workContainer}>
+            <div className={styles.workContainer}  style={{ marginBottom: '-80px' }}>
                 <div className={styles.workLeftContainer}>
                     <h1 className={styles.name}>Crisp Cleaning</h1>
                     <p className={styles.subText}>Cleaning services website, serving the Bay Area.</p>
@@ -54,7 +54,7 @@ export default function Work() {
                   />
                 </div>
             </div>
-            <div className={styles.workContainer}>
+            <div className={styles.workContainer}  style={{ marginBottom: '-10px' }}>
                 <div className={styles.workLeftContainer}>
                     <h1 className={styles.name}>Holistic Coaching</h1>
                     <p className={styles.subText}>A website for a therapist supporting moms with children who are neurodiverse.</p>
