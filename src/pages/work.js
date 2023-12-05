@@ -21,7 +21,55 @@ export default function Work() {
       <main>
         <div>
           <Header/>
-          <div className={styles.container}> 
+          <div className={styles.container}>
+          <div className={styles.workContainer}>
+                <div className={styles.workLeftContainer}>
+                    <h1 className={styles.name}>Style Me- With Roni</h1>
+                    <p className={styles.subText}>Fashion consultant turned therapist on a quest to change the nature of styling people.</p>
+                    <Link href=""><button className={styles.workButton}>Coming Soon</button></Link>
+                </div>
+                <div className={styles.workRightContainer}>
+                  <Image
+                    className={styles.art}
+                    src="/images/image 3.svg"
+                    width={292}
+                    height={366}
+                    alt="Codefy UI image"
+                  />
+                </div>
+            </div>
+            <div className={styles.workContainer}>
+                <div className={styles.workLeftContainer}>
+                    <h1 className={styles.name}>Crisp Cleaning</h1>
+                    <p className={styles.subText}>Cleaning services website, serving the Bay Area.</p>
+                    <Link href=""><button className={styles.workButton}>Coming Soon</button></Link>
+                </div>
+                <div className={styles.workRightContainer}>
+                  <Image
+                    className={styles.art}
+                    src="/images/Just the Logo 1.svg"
+                    width={292}
+                    height={366}
+                    alt="Codefy UI image"
+                  />
+                </div>
+            </div>
+            <div className={styles.workContainer}>
+                <div className={styles.workLeftContainer}>
+                    <h1 className={styles.name}>Holistic Coaching</h1>
+                    <p className={styles.subText}>A website for a therapist supporting moms with children who are neurodiverse.</p>
+                    <Link href=""><button className={styles.workButton}>Coming Soon</button></Link>
+                </div>
+                <div className={styles.workRightContainer}>
+                  <Image
+                    className={styles.art}
+                    src="/images/Group 4.svg"
+                    width={292}
+                    height={366}
+                    alt="Codefy UI image"
+                  />
+                </div>
+            </div>
             <div className={styles.workContainer}>
                 <div className={styles.workLeftContainer}>
                     <h1 className={styles.name}>CodefyUI</h1>
